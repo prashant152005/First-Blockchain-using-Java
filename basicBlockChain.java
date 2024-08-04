@@ -18,7 +18,11 @@ public class basicBlockChain {
 		
 		blockchain.add(new Block("Hey im the third block",blockchain.get(blockchain.size()-1).hash));
 		System.out.println("Trying to Mine block 3... ");
-		blockchain.get(2).mineBlock(difficulty);	
+		blockchain.get(2).mineBlock(difficulty);
+
+		blockchain.add(new Block("Hey im the third block",blockchain.get(blockchain.size()-1).hash));
+		System.out.println("Trying to Mine block 4... ");
+		blockchain.get(3).mineBlock(difficulty);
 		
 		System.out.println("\nBlockchain is Valid: " + isChainValid());
 		
