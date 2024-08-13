@@ -28,9 +28,6 @@ public class basicBlockChain {
 		System.out.println("Trying to Mine block 5... ");
 		blockchain.get(4).mineBlock(difficulty);
 
-		blockchain.add(new Block("Hey im the Sixth block",blockchain.get(blockchain.size()-1).hash));
-		System.out.println("Trying to Mine block 6... ");
-		blockchain.get(5).mineBlock(difficulty);
 		
 		System.out.println("\nBlockchain is Valid: " + isChainValid());
 		
