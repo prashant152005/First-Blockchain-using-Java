@@ -8,23 +8,23 @@ public class basicBlockChain {
 	public static void main(String[] args) {	
 		//add our blocks to the blockchain ArrayList:
 		
-		blockchain.add(new Block("Hi im the first block", "0"));
+		blockchain.add(new Block("Hi I'm the first block", "0"));
 		System.out.println("Trying to Mine block 1... ");
 		blockchain.get(0).mineBlock(difficulty);
 		
-		blockchain.add(new Block("Yo im the second block",blockchain.get(blockchain.size()-1).hash));
+		blockchain.add(new Block("Yo I'm the second block",blockchain.get(blockchain.size()-1).hash));
 		System.out.println("Trying to Mine block 2... ");
 		blockchain.get(1).mineBlock(difficulty);
 		
-		blockchain.add(new Block("Hey im the third block",blockchain.get(blockchain.size()-1).hash));
+		blockchain.add(new Block("Hey I'm the third block",blockchain.get(blockchain.size()-1).hash));
 		System.out.println("Trying to Mine block 3... ");
 		blockchain.get(2).mineBlock(difficulty);
 
-		blockchain.add(new Block("Hey im the Fourth block",blockchain.get(blockchain.size()-1).hash));
+		blockchain.add(new Block("Hey I'm the Fourth block",blockchain.get(blockchain.size()-1).hash));
 		System.out.println("Trying to Mine block 4... ");
 		blockchain.get(3).mineBlock(difficulty);
 
-		blockchain.add(new Block("Hey im the Fifth block",blockchain.get(blockchain.size()-1).hash));
+		blockchain.add(new Block("Hey I'm the Fifth block",blockchain.get(blockchain.size()-1).hash));
 		System.out.println("Trying to Mine block 5... ");
 		blockchain.get(4).mineBlock(difficulty);
 
